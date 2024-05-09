@@ -6,15 +6,15 @@ Installation
 
 1) node 
 
-2)npm
+2) npm
 
-3)typescript
+3) typescript
 
-4)cypress
+4) cypress
 
-5)proxy setting with approval from IT
+5) proxy setting with approval from IT
 
-6)Edit environment settings
+6) Edit environment settings
 
 
 ## Available Scripts
@@ -59,3 +59,4 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
