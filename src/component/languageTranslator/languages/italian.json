@@ -1,0 +1,216 @@
+{
+  "untranslateData": {
+    "landingPageContent": {
+      "greeting": "Ciao, sono PAEN ABBot",
+      "subGreeting": "Come posso aiutarti oggi?",
+      "features": [
+        {
+          "title": "Centro Bibliotecario ABB",
+          "description": "Accedi all'utilità di chat ABB e cerca informazioni dalla Biblioteca ABB",
+          "imageSrc": "https://media-d.global.abb/is/image/abbc/Electrifying%20the%20world%20-%20Solar%20Inverter:16x9?wid=1440&hei=810",
+          "imageAlt": "Accesso alla Biblioteca",
+          "buttonText": "Entra",
+          "link": "https://library.abb.com/"
+        },
+        {
+          "title": "Sommario Documenti ABB",
+          "description": "Conversazione in tempo reale con i tuoi documenti utilizzando il sommario PAEN",
+          "imageSrc": "https://resources.news.e.abb.com/images/2024/1/31/0/QUARTERLY_RESULTS.jpg",
+          "imageAlt": "Sommario Documenti",
+          "buttonText": "Entra",
+          "link": "/commercial"
+        }
+      ]
+    },
+
+    "disclaimer": {
+      "disclaimer": "Avvertenza:",
+      "contents": [
+        {
+          "line": "L'accuratezza dei contenuti in questo sommario dei documenti è generata algoritmicamente e potrebbe non catturare l'intera profondità del testo originale."
+        },
+        {
+          "line": "Si consiglia agli utenti di verificare indipendentemente le informazioni cruciali, poiché l'output del sommario potrebbe non essere sempre esaustivo o privo di errori."
+        },
+        {
+          "line": "Sebbene la tecnologia miri alla precisione, l'accuratezza del sommario dipende dalla complessità e dal contesto del testo di input."
+        }
+      ],
+      "buttonText": "Ho Capito"
+    }
+  },
+
+  "translateData": {
+    "multiToggle": {
+      "title" : {
+          "commercial": "Commerciale",
+          "technical": "Tecnico",
+          "contract": "Contratti",
+          "procurement": "Acquisti",
+          "others": "altre"
+      },
+      "subTitle": {
+        "commercialDesc": "Specifica i termini commerciali",
+        "technicalDesc": "Definisce il campo di fornitura e gli aspetti della soluzione",
+        "contractDesc": "Illustra i Termini e le Condizioni",
+        "procurementDesc": "Sommario del Documento, Preparativi per le negoziazioni con i fornitori",
+        "othersDesc": "Intelligenza del Documento (Es: Ingegneria, Altri)"
+      },
+      "labelContent": "Seleziona la tua categoria per caricare il file:"
+    },
+
+    "sideBar": {
+      "sidebar": {
+        "newChat": "Nuova Chat",
+        "downloadCenter": "Centro Download",
+        "feedback": "Feedback",
+        "summaries": {
+          "commercial": "Sommario Commerciale",
+          "legal": "Sommario Legale",
+          "technical": "Sommario Tecnico",
+          "general": "Sommario Generale",
+          "procurement": "Sommario Acquisizioni"
+        }
+      },
+      "toasts": {
+        "newChatCreated": "Nuova Chat Creata",
+        "downloadInProgress": "Download in corso...",
+        "downloadComplete": "Download completato con successo. Controlla la tua cartella Download!",
+        "waitCurrentDownload": "Attendi il completamento del download corrente.",
+        "errorReloadingPage": "Errore nel ricaricare la pagina:",
+        "downloadError": "Errore durante il download:",
+        "invalidDownloadType": "Tipo di download non valido"
+      },
+      "feedbackUrl": "https://forms.office.com/e/n6hG5kQ34C",
+      "downloadBaseUrl": "https://rfqdocumentstorage.blob.core.windows.net/rfq-downloads/"
+    },
+
+    "userInteractionBox": {
+      "greeting": "Come posso aiutarti oggi?",
+      "uploadPrompt": "Si prega di caricare il documento prima di inviare il comando 'carica'.",
+      "uploadSuccess": "File caricati con successo",
+      "uploadError": "Si è verificato un errore durante il caricamento del file. Si prega di riprovare.",
+      "fileProcessingError": "Si è verificato un errore durante l'elaborazione del file. Si prega di riprovare.",
+      "fetchSystemResponseError": "Errore: Impossibile recuperare la risposta del sistema",
+      "processingMessage": "Un altro file è già in fase di elaborazione. Si prega di attendere.",
+      "fileUploadedMessage": "I file sono già stati caricati. Si prega di selezionare nuovi file.",
+      "errorOccurredMessage": "Si è verificato un errore. O l'engine richiesto non esiste o c'è stato un altro problema durante l'elaborazione della tua richiesta."
+    },
+
+    "userInteractionBoxUploader": {
+      "documentUpload": {
+        "instructions": "Si prega di caricare il documento (.pdf, .docx formati solo):",
+        "maxSizeLimit" : "Si prega di caricare il file di dimensioni inferiori a 10 MB",
+        "maxFileSize": "( Dimensione massima del file 10 MB )",
+        "filesSelected": " selezionati, clicca su caricamento",
+        "selectedFilesForUpload": "File selezionati :",
+        "uploadingFile": "Caricamento File",
+        "processingFile": "Elaborazione File",
+        "uploadSuccess": "File caricati con successo",
+        "suggestedQuestionsPlaceholder": "Domande suggerite dai documenti:",
+        "file": "file",
+        "files": "files",
+        "upload": "Carica"
+      }
+    },
+
+    "textBoxWithButton": {
+      "instructions": "Disposizioni",
+      "raiseConcern": "Sollevare la preoccupazione",
+      "feedback": "Feedback",
+      "contactUs": "Contattaci"
+    },
+
+    "chatBox": {
+      "chatText": "Digita o fai la tua domanda"
+    },
+
+    "suggestions": {
+      "moreSuggestions": "Altri suggerimenti",
+      "prevSuggestions": "Suggerimenti precedenti"
+    },
+
+    "instructionsManual": {
+      "howToUse": "Come Utilizzare l'Applicazione:",
+      "line1": "Inizia scegliendo uno dei dipartimenti (Commerciale, Legale, Ingegneria, Acquisti, Altro/Generale).",
+      "line2": "Sfoglia i tuoi documenti cliccando su 'Scegli File' e premi il pulsante 'Carica' per elaborarli.",
+      "line3": "Aspetta che i documenti vengano elaborati (potrebbe richiedere alcuni minuti in base alla dimensione del documento).",
+      "line4": "Dopo che i file vengono elaborati, puoi vedere un elenco a discesa di domande standard. Puoi scegliere le domande predefinite per ottenere una risposta.",
+      "line5": "Puoi anche utilizzare la casella di testo di ricerca (o la ricerca vocale) nella parte inferiore della pagina per fare la tua domanda.",
+      "line6": "Utilizza la barra del menu laterale sinistro per:",
+      "line6Menu": {
+        "predefinedChat": "Scaricare le chat predefinite (per dipartimento) come excel.",
+        "currentChat": "Cancellare la chat corrente e iniziare una nuova chat usando il simbolo più."
+      },
+      "line7": "Puoi sempre passare tra le categorie per fare query specifiche della categoria.",
+      "line8": "Per ulteriori domande utilizza 'contattaci' nella parte inferiore della pagina.",
+      "line9": "In tutti i passaggi sopra indicati, attendi mentre il sito sta elaborando. Non provare altre funzionalità mentre qualcosa viene elaborata.",
+      "buttonText": "Ho Capito"
+    },
+
+    "optionsData": {
+      "option1": {
+        "1": "Dai il Sommario delle Responsabilità e delle perdite conseguenti?",
+        "2": "Quali sono i termini/condizioni di pagamento e i formati dei prezzi?",
+        "25": "Dai il sommario del documento",
+        "26": "Elenca i prodotti ABB nel documento",
+        "27": "Sintetizza brevemente le procedure di installazione (se presenti) nel documento",
+        "28": "Se catalogo prodotti, mostra le specifiche/configurazioni dettagliate del prodotto",
+        "29": "Se catalogo prodotti, elenca le applicazioni e i vantaggi del prodotto",
+        "30": "Elenca gli standard/clausole menzionati nel documento",
+        "31": "Sintetizza i termini di pagamento, le condlimits, le condizioni dell'accordo, le limitazioni/responsabilità, ecc.",
+        "32": "Quali sono le leggi, le pretese e i meccanismi di disputa?"
+      },
+      "option2": {
+        "3": "Quali sono i diritti e le clausole di sospensione e risoluzione?",
+        "4": "Quali sono i Danni Liquidati (LDs) per Prestazioni e Ritardi?",
+        "5": "Dai il Sommario delle responsabilità e delle perdite conseguenti",
+        "6": "Quali sono i termini & condizioni di pagamento e i formati dei prezzi?",
+        "7": "Quali sono i diritti e le clausole di sospensione e risoluzione?",
+        "8": "Quali sono i Danni Liquidati (LDs) per Prestazioni e Ritardi?",
+        "9": "Quali sono gli importi delle penalità o la responsabilità per i Danni Liquidati Ritardati?",
+        "10": "Elenca le garanzie/termini e le clausole di garanzia",
+        "11": "Quali sono le leggi, le pretese e i meccanismi di disputa?",
+        "12": "Chi ha l'autorità per la risoluzione delle dispute in questo Contratto?"
+      },
+      "option3": {
+        "13": "Quali sistemi tra DCS, SIS, FGS, ICSS ecc. sono presenti nel documento?",
+        "14": "Qual è l'ambito di lavoro per tutti i sistemi identificati?",
+        "15": "Sintetizza brevemente l'architettura del sistema insieme agli standard, ai sistemi di supporto, ecc.",
+        "16": "Quali sono le ridondanze nell'architettura e/o nel design?",
+        "17": "Elenca i requisiti di progettazione hardware e/o software",
+        "18": "Elenca il Bill of Materials (BOM) per tutti i sistemi identificati",
+        "19": "Dai le specifiche tecniche e gli standard per la realizzazione dei cabinet DCS",
+        "20": "Dai le specifiche tecniche e gli standard per la realizzazione dei cabinet SIS",
+        "21": "Dai le specifiche tecniche e gli standard per la realizzazione dei cabinet FGS",
+        "22": "Dai le specifiche tecniche e gli standard per la realizzazione dei cabinet ICSS",
+        "23": "Dai la configurazione/specs, info e quantità per i moduli di Input (analogici e digitali)",
+        "24": "Dai la configurazione/specs, info e quantità per i moduli di Output (analogici e digitali)"
+      },
+      "option4": {
+        "33": "Dai le date di inizio, fine e prolungamento del progetto",
+        "34": "Dai il Sommario delle responsabilità e delle perdite conseguenti",
+        "35": "Quali sono i termini & condizioni di pagamento e i formati dei prezzi?",
+        "36": "Elenca la trattenuta di denaro, il pagamento anticipato e le condizioni assicurative?",
+        "37": "Quali sono i diritti e le clausole di sospensione e risoluzione?",
+        "38": "Quali sono i Danni Liquidati (LDs) per Prestazioni e Ritardi?",
+        "39": "Quali sono gli importi delle penalità o la responsabilità per i Danni Liquidati Ritardati?",
+        "40": "Elenca le garanzie/termini e le clausole di garanzia",
+        "41": "Quali sono le leggi, le pretese e i meccanismi di disputa?",
+        "42": "Elenca le disposizioni di avviso, la sicurezza delle prestazioni e i requisiti locali del Paese"
+      },
+      "option5": {
+        "1": "Dai il Sommario delle responsabilità e delle perdite conseguenti?",
+        "2": "Quali sono i termini/condizioni di pagamento e i formati dei prezzi?",
+        "25": "Dai il sommario del documento",
+        "26": "Elenca i prodotti ABB nel documento",
+        "27": "Sintetizza brevemente le procedure di installazione (se presenti) nel documento",
+        "28": "Se catalogo prodotti, mostra le specifiche/configurazioni dettagliate del prodotto",
+        "29": "Se catalogo prodotti, elenca le applicazioni e i vantaggi del prodotto",
+        "30": "Elenca gli standard/clausole menzionati nel documento",
+        "31": "Sintetizza i termini di pagamento, le condizioni dell'accordo, le limitazioni/responsabilità, ecc.",
+        "32": "Quali sono le leggi, le pretese e i meccanismi di disputa?"
+      }
+    }
+  }
+}

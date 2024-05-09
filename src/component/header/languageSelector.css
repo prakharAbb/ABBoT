@@ -1,0 +1,93 @@
+/* languageSelector.css */
+
+.language-selector {
+  position: absolute; /* Ensure relative positioning for absolute children */
+  right: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.language-icon {
+  cursor: pointer;
+}
+
+.language-code {
+  margin-top: 5px;
+  margin-right: 2px;
+  font-weight: 800;
+  font-size: 15px; /* Adjust the size as needed */
+  color: gray;  /*Text color for the language label*/
+}
+
+.language-dropdown {
+  position: absolute;
+  top: 48px; /* Position the dropdown below the language selector */
+  padding: 10px 15px 10px 15px; 
+  cursor: pointer;
+  text-align: left;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.language-dropdown div {
+  font-size: 16px; /* Increase the font size */
+  font-weight: 400; /* Make the text bold */
+  margin-bottom: 10px; /* Adjust the spacing between dropdown items */
+  transition: background-color 0.3s; /* Add smooth transition effect */
+}
+
+.selected-language {
+  background-color: red; /* Change background color of selected language */
+  color: white;
+}
+
+.language-dropdown div:hover {
+  transform: translateX(5px);
+  background-color: red; /* Change background color on hover */
+  color: white;
+}
+
+
+
+  /* .language-dropdown .selected-language {
+    color: red;
+  } */
+
+  /* .language-dropdown-menu {
+  list-style: left;
+  padding: 5px 0;
+  min-width: 120px; /* Minimum width of the dropdown
+} */
+
+/* .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-menu div {
+  padding: 5px;
+  cursor: pointer;
+} */
+
+/* .language-dropdown-menu li {
+  padding: 8px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+} */
+
+/* .language-dropdown-menu li:hover {
+  background-color: #f0f0f0; /* Hover background color
+} */
+
+/* .language-dropdown-menu li:not(:last-child) {
+  border-bottom: 1px solid #eee; /* Separator between items
+} */

@@ -1,0 +1,43 @@
+/* chat.css */
+.chatBox {
+  position: relative;
+  width: 99.8%;
+  height: auto; /* Adjust height as needed */
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* border: 1px solid red; */
+}
+
+.chatMessage {
+  position: relative;
+  margin-right: 0;
+  margin-bottom: 10px;
+  padding: 15px;
+  max-width: 70%;
+  border-radius: 10px;
+}
+
+.userMessage {
+  background-color: red; /* Blue for user messages */
+  color: #fff; /* White text color */
+  align-self: flex-end; /* Align user messages to the right */
+}
+
+.botMessage {
+  background-color: #E0E0E0; /* Light gray for bot messages */
+  align-self: flex-start; /* Align bot messages to the left */
+}
+
+@media (max-width: 1025px) {
+  .chatBox {
+    /* top: 56%; Adjust as needed */
+    width: 99.7%; /* Same width as BrowseFile */
+    /* right: 0; Same right position as BrowseFile */
+    height: auto; 
+    /* border: 1px solid red; */
+
+  }
+
+}

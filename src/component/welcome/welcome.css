@@ -1,0 +1,26 @@
+/* welcomeBox.css */
+.welcomeBox {
+    position: absolute;
+    top: 52%;
+    width: 84%;
+    right: 0;
+    text-align: center;
+}
+
+.welcomeBox span {
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.welcomeBox p {
+    font-size: 20px;
+    color: #666;
+}
+
+@media (max-width: 1025px) {    
+    .welcomeBox {
+        top: 55%;
+        width: 89%;
+        right: 5%;
+    }
+}

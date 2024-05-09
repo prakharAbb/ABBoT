@@ -1,0 +1,85 @@
+/* textBox.css */
+.textBox {
+    position: absolute;
+    bottom: 9%; 
+    right: 11%; 
+    width: 62%; 
+    height: 12%; 
+}
+  
+    .textBox textarea {
+        width: 86%; /* Take up full width of the container */
+        height: 83%; /* Take up full height of the container */
+        resize: none; /* Prevent resizing */
+        font-size: 18px;
+        padding: 1.5% 12.5% 1% 2%; /* up right down left */
+        /* text-indent: 20px; Placeholder indentation from text-box left */
+        /* line-height: normal; Place and holder height from text-box top */
+        border: none;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }  
+
+    .iconButton {
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .micIcon {
+        position: absolute;
+        color: black;
+        right: 7%;
+        bottom: 13%;
+    }
+
+    .micIcon.active {
+        position: absolute;
+        color: red;
+    }
+
+    .sendIcon {
+        position: absolute;
+        width: 25px; 
+        height: 25px;
+        right: 2%;
+        bottom: 12%;
+    }
+        
+    .sendIcon.active {
+        background-color: red;
+        border-radius: 30%;
+    } 
+
+    .textBoxBorder {
+        position: absolute;
+        bottom: 7.5%; 
+        right: 10.7%; 
+        width: 62.3%; 
+        height: 1%; 
+        background: radial-gradient(100% 300% at 100% 110%, #BABABA 40%, red 100%);
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+  
+@media (max-width: 1025px) {
+    .textBox {
+        right: 7%;
+        width: 87%; /* Adjust as needed */
+    }   
+
+        .textBox textarea {
+            width: 85%; /* Take up full width of the container */
+            padding: 1.5% 13.8% 1% 2%; /* up right down left */
+        }
+
+        .textBoxBorder {
+            right: 6.2%;
+            width: 87.9%; /* Adjust as needed */
+            bottom: 8.5%;
+        }
+
+        .micIcon {
+            right: 8%;
+        }
+}

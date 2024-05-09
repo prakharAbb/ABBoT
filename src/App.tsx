@@ -1,24 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from './component/header/header'
+// import  LeftPanel from './component/sideBar/leftPanel';
+import Footer from 'component/footer/footer';
+import TextBox from 'component/textBox/textBox';
+import Cards from 'component/card/card';
+import BrowseFile from 'component/browse/browse';
+import Chat from 'component/chat/chat';
+import WelcomeBox from 'component/welcome/welcome';
+// import Sidebar from './component/sideBar/ab';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      {/* <LeftPanel /> <Sidebar /> */}
+      {/* <Cards/> */}
+      {/* <Chat /> */}
+      {/* <BrowseFile /> */}
+      {/* <WelcomeBox /> */}
+      {/* <TextBox /> */}
+      <Footer/>
     </div>
   );
 }

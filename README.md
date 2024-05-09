@@ -2,6 +2,21 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Installation
+
+1) node 
+
+2)npm
+
+3)typescript
+
+4)cypress
+
+5)proxy setting with approval from IT
+
+6)Edit environment settings
+
+
 ## Available Scripts
 
 In the project directory, you can run:
