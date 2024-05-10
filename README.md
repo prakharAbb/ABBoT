@@ -4,17 +4,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Installation
 
-1) node 
+1) npm typescript => npm install --save typescript @types/node @types/react @types/react-dom @types/jest
 
-2) npm
+2) npm cypress => npm install cypress --save-dev
 
-3) typescript
-
-4) cypress
-
-5) proxy setting with approval from IT
-
-6) Edit environment settings
+3) Edit environment for cypress
 
 
 ## Available Scripts
