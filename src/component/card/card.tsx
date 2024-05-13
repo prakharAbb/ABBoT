@@ -4,12 +4,28 @@ import './card.css'; // Create corresponding CSS file for styling
 import * as ABB from "@abb/abb-common-ux-react"
 import BrowseFile from 'component/browse/browse';
 import WelcomeBox from 'component/welcome/welcome';
+import { Translator } from 'component/translator/translator';
+import { title } from 'process';
 
-interface Props {
+interface CardsProps {
     onRefreshBrowseAndChat: boolean;
+    language: string;
 }
 
-const Cards: React.FC<Props> = ({onRefreshBrowseAndChat}) => {
+interface CardInfo {
+    department: string;
+    iconName: string;
+}
+
+const cardData: CardInfo[] = [
+    { department: "commercial", iconName:"abb/object" },
+    { department: "technical", iconName:"abb/robot-cabinet" },
+    { department: "contract", iconName:"abb/reports" },
+    { department: "procurement", iconName:"abb/hierarchy" },
+    { department: "others", iconName:"abb/settings" }
+];
+
+const Cards: React.FC<CardsProps> = ({onRefreshBrowseAndChat, language}) => {
     const [isBrowseOpen, setIsBrowseOpen] = useState<boolean>(false);
     const [isCardClicked , setIsCardClicked] = useState<number | null>(null);
     const [selectedDepartment, setSelectedDepartment] = useState<string | null>(null);
@@ -29,80 +45,31 @@ const Cards: React.FC<Props> = ({onRefreshBrowseAndChat}) => {
         <div>                        
             {isBrowseOpen && (
                 <h1 className="title">
-                    How can I help you today ?
+                    <Translator language={language} keyName="translateData.howCanIHelp" />
                 </h1>
             )}
 
             <div className="cardMenu">
-                <div 
-                    className={`card ${isCardClicked === 0 ? "clicked" : ""}`}
-                    onClick={() => handleCategory(0, "Commercial")}
-                >
-                    <ABB.Icon 
-                        className="icon"
-                        name="abb/object" 
-                        sizeClass="medium"
-                    /> 
-                    <h1> Commercial </h1>
-                    <span>Specifies commercial terms</span>
-                </div>
-
-                <div 
-                    className={`card ${isCardClicked === 1 ? "clicked" : ""}`}
-                    onClick={() => handleCategory(1, "Technical")}
-                >
-                    <ABB.Icon 
-                        className="icon"
-                        name="abb/robot-cabinet" 
-                        sizeClass="medium"
-                    /> 
-                    <h1>Technical</h1>
-                    <span>Defines scope of supply & solution aspects</span>
-                </div>
-                
-                <div 
-                    className={`card ${isCardClicked === 2 ? "clicked" : ""}`}
-                    onClick={() => handleCategory(2, "Contract")}
-                >
-                    <ABB.Icon 
-                        className="icon"
-                        name="abb/reports" 
-                        sizeClass="medium"
-                    /> 
-                    <h1>Contract</h1>
-                    <span>Outlines Terms and Conditions</span>
-                </div>
-                
-                <div 
-                    className={`card ${isCardClicked === 3 ? "clicked" : ""}`}
-                    onClick={() => handleCategory(3, "Procurement")}
-                >
-                    <ABB.Icon 
-                        className="icon"
-                        name="abb/hierarchy" 
-                        sizeClass="medium"
-                    /> 
-                    <h1>Procurement</h1>
-                    <span>Document Summarization, Supplier negotiations</span>
-                </div>        
-                
-                <div 
-                    className={`card ${isCardClicked === 4 ? "clicked" : ""}`}
-                    onClick={() => handleCategory(4, "Others")}
-                >
-                    <ABB.Icon 
-                        className="icon"
-                        name="abb/settings" 
-                        sizeClass="medium"
-                    /> 
-                    <h1>Others</h1>
-                    <span>Document Intelligence (eg. Engineering, Others)</span>
-                </div>
+                {cardData.map((card, index) => (
+                    <div
+                        key={index}
+                        className={`card ${isCardClicked === index ? "clicked" : ""}`}
+                        onClick={() => handleCategory(index, card.department)}
+                    >
+                        <ABB.Icon
+                            className="icon"
+                            name={card.iconName}
+                            sizeClass="medium"
+                        />
+                        <h1> <Translator language={language} keyName={`translateData.cards.title.${card.department}`} /> </h1>
+                        <span> <Translator language={language} keyName={`translateData.cards.description.${card.department}`} /> </span>
+                    </div>
+                ))}
             </div>
 
-            {!isBrowseOpen && <WelcomeBox />}
+            {!isBrowseOpen && <WelcomeBox language={language} />}
             
-            {isBrowseOpen && <BrowseFile selectedDepartment={selectedDepartment}/>} 
+            {isBrowseOpen && <BrowseFile selectedDepartment={selectedDepartment} language={language} />} 
 
         </div>
     );

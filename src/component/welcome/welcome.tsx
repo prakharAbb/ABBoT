@@ -1,13 +1,17 @@
 // WelcomeBox.tsx
 import React from 'react';
 import './welcome.css';
+import { Translator } from 'component/translator/translator';
 
-const WelcomeBox = () => {
+interface WelcomeBoxProps {
+    language: string;
+}
+
+const WelcomeBox: React.FC<WelcomeBoxProps> = ({language}) => {
     return (
         <div className="welcomeBox">
-            <span> Welcome to </span>
-            <span> PAEN ABBoT </span>
-            <p>Please click on any department to proceed.</p>
+            <span> <Translator language={language} keyName="translateData.welcome.greeting" /> </span>
+            <p> <Translator language={language} keyName="translateData.welcome.clickDept" /> </p>
         </div>
     );
 }

@@ -4,13 +4,15 @@ import './browse.css'; // Create a corresponding CSS file for styling
 import * as ABB from '@abb/abb-common-ux-react'
 import Chat from 'component/chat/chat';
 import TextBox from 'component/textBox/textBox';
-import jsonData from 'component/languageTranslator/languages/english.json';
+import context from 'component/translator/languages/english.json';
+import { Translator } from 'component/translator/translator';
 
 interface BrowseFileProps {
     selectedDepartment: string | null;
+    language: string;
 }
 
-const BrowseFile: React.FC<BrowseFileProps> = ({ selectedDepartment }) => {
+const BrowseFile: React.FC<BrowseFileProps> = ({ selectedDepartment, language }) => {
     const scrollAndChatRef = useRef<HTMLDivElement>(null);
     const [isScrollbarVisible, setIsScrollbarVisible] = useState<boolean>(false);
     const [isUploadClicked, setIsUploadClicked] = useState<boolean>(false);
@@ -71,11 +73,22 @@ const BrowseFile: React.FC<BrowseFileProps> = ({ selectedDepartment }) => {
         // Here you might also send the message to a server or perform any other action
     };
 
+    const handleQuestionButtonClick = (question: string) => {
+        handleMessageSubmit(question);
+    };
+
     const getSuggestedQuestions = () => {
-        const allQuestions = Object.entries(jsonData.translateData.suggestedQuestions)
+        const allQuestions = Object.entries(context.translateData.suggestedQuestions)
                                    .map(([department, questions]) => ({department, questions}));
         setSuggestedQuestions(allQuestions);
         setCurrentQuestionSlide(0);
+
+        // Scroll to the bottom
+        setTimeout(() => {
+            if (scrollAndChatRef.current) {
+                scrollAndChatRef.current.scrollTop = scrollAndChatRef.current.scrollHeight;
+            }
+        }, 100); // Timeout to wait for the chat to render before scrolling
     };
 
     const departmentQuestions = selectedDepartment
@@ -111,7 +124,7 @@ const BrowseFile: React.FC<BrowseFileProps> = ({ selectedDepartment }) => {
                             name="abb/new-document" 
                             sizeClass="large" 
                         />
-                        <span>Browse files (Max 10MB)</span>
+                        <span> <Translator language={language} keyName="translateData.browse.browseFiles" /> </span>
                     </label>
                     <input
                         type="file"
@@ -123,29 +136,30 @@ const BrowseFile: React.FC<BrowseFileProps> = ({ selectedDepartment }) => {
                     />
 
                     <div className={`${isSelectedFileCount === 0 ?  "browseRequest" : "hidden" }` }>
-                        Please browse your document(s) <br/>
-                        (.pdf, .docx formats only)
+                        <Translator language={language} keyName="translateData.browse.browseRequest" /> <br />
+                        <Translator language={language} keyName="translateData.browse.browseRequestFormat" />
                     </div>
 
                     <div className={`${isSelectedFileCount === 0 ? "hidden" : "selectedFileCount" }` }>
+                        {isSelectedFileCount + " "}
                         {isUploadClicked ? 
-                            `${isSelectedFileCount} file(s) uploaded` : 
-                            `${isSelectedFileCount} file(s) selected`
+                            <Translator language={language} keyName="translateData.browse.fileUploaded" /> : 
+                            <Translator language={language} keyName="translateData.browse.fileSelected" />
                         } 
                         <br />
-                        {!isUploadClicked && "Please click on upload"}
+                        { !isUploadClicked && <Translator language={language} keyName="translateData.browse.clickOnUpload" /> } 
                     </div>
                     
                     <button 
                         className={`uploadButton ${isSelectedFileCount > 0 && !isUploadClicked ? "enabled" : ""}`}
                         onClick={handleUploadButton}
                     >
-                        Upload
+                        <Translator language={language} keyName="translateData.browse.upload" />
                     </button>
                 
                     {isSelectedFileName.length > 0 && (
                         <div className="selectedFileName">
-                            <h3>Selected files:</h3>
+                            <h3> <Translator language={language} keyName="translateData.browse.selectedFiles" /> </h3>
                             {isSelectedFileName.map((fileNames, index) => (
                                 <span key={index}>
                                     {`${index+1}.) ${fileNames}`}
@@ -157,32 +171,44 @@ const BrowseFile: React.FC<BrowseFileProps> = ({ selectedDepartment }) => {
 
                 {paginatedQuestions.length > 0 && (
                     <div className="suggestedQuestionsBox">
-                        <h3>Suggested Questions to ask ABBoT for {departmentQuestions?.department}:</h3>
-                        {paginatedQuestions.map((question, index) => (
+                        <h3> 
+                            <Translator language={language} keyName="translateData.browse.suggestionRequest" /> 
+                            {selectedDepartment}:
+                        </h3>
+                        
+                        <div className="questionsBox">
+                            {paginatedQuestions.map((question, index) => (
+                                <button 
+                                    className="questionsButton"
+                                    key={index}
+                                    onClick={() => handleQuestionButtonClick(question)}
+                                >
+                                    {question}
+                                    {/* <Translator language={language} keyName={`translateData.suggestedQuestions.${selectedDepartment}.${index}`} /> */}
+                                </button>
+                            ))}
+                        </div>
+                        
+                        <div className="navigateSuggestions">
                             <button 
-                                className="questionsButton"
-                                key={index}
-                            >
-                                {question}
-                            </button>
-                        ))}
-                        <div>
-                            <button 
+                                className="previousSuggestions"
                                 disabled={currentQuestionSlide === 0} 
                                 onClick={handlePrevPage}
-                                className="previousSuggestions"
                             >
-                                Previous Suggestions
+                                <Translator language={language} keyName="translateData.browse.navigateSuggestions.prevSuggestions" /> 
                             </button>
+
                             <span className="slideNumber">
-                                {`Slide ${currentQuestionSlide + 1} of ${totalPages}`}
+                                <Translator language={language} keyName="translateData.browse.navigateSuggestions.slide" />
+                                {` ${currentQuestionSlide + 1} / ${totalPages}`}
                             </span>
+
                             <button 
+                                className="nextSuggestions"
                                 disabled={currentQuestionSlide === totalPages - 1} 
                                 onClick={handleNextPage}
-                                className="nextSuggestions"
                             >
-                                Next Suggestions
+                                <Translator language={language} keyName="translateData.browse.navigateSuggestions.nextSuggestions" /> 
                             </button>
                         </div>
                     </div>
@@ -191,7 +217,7 @@ const BrowseFile: React.FC<BrowseFileProps> = ({ selectedDepartment }) => {
                 <Chat messages={messages} />
             </div>
 
-            {isUploadClicked && <TextBox onMessageSubmit={handleMessageSubmit} />}
+            {isUploadClicked && <TextBox onMessageSubmit={handleMessageSubmit} language={language} />}
 
         </div>
     );

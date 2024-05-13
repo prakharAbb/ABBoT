@@ -2,17 +2,22 @@
 import React from 'react';
 import * as ABB from '@abb/abb-common-ux-react'
 import './footer.css';
+import { Translator } from 'component/translator/translator';
 
-const Footer = () => {
+interface FooterProps {
+  language: string;
+}
+
+const Footer: React.FC<FooterProps> = ({ language }) => {
   return (
     <footer className='footer'>
       <div className="footer-links">
-        <a href="/concerns">Raise Concerns</a>
-        <a href="/contact">Contact Us</a>
-        <a href="/feedback">Feedback</a>
-        <a href="/terms">Terms & Conditions</a>
+        <a href="/concerns"> <Translator language={language} keyName="translateData.footer.raiseConcern" /> </a>
+        <a href="/contact"> <Translator language={language} keyName="translateData.footer.contactUs" /> </a>
+        <a href="/feedback"> <Translator language={language} keyName="translateData.footer.feedback" /> </a>
+        <a href="/terms"> <Translator language={language} keyName="translateData.footer.termsAndConditions" /> </a>
       </div>
-      <div className="copyRight">© 2024 ABB</div>
+      <div className="copyRight"> <Translator language={language} keyName="translateData.footer.copyRight" /> </div>
     </footer>
   );
 }

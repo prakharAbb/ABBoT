@@ -163,12 +163,14 @@ import * as ABB from '@abb/abb-common-ux-react'
 import '../leftPanel/leftPanel.css'
 import TextBox from 'component/textBox/textBox';
 import Card from 'component/card/card';
+import { Translator } from 'component/translator/translator';
 
 interface LeftPanelProps{
   isMenuOpen?: boolean;
+  language: string;
 }
 
-const LeftPanel = ( {isMenuOpen}: LeftPanelProps ) => {
+const LeftPanel: React.FC<LeftPanelProps> = ({ isMenuOpen, language }) => {
 
   const [isBrowseAndChatOpen, setIsBrowseAndChatOpen] = useState<boolean>(true);
   // isMenuOpen = isMenuOpen ? true : false
@@ -183,24 +185,24 @@ const LeftPanel = ( {isMenuOpen}: LeftPanelProps ) => {
       <div className={`leftPanel ${isMenuOpen ? "open" : ""}`}>
         <button className="refreshPageButton" onClick={refreshBrowseAndChat}>
           <ABB.Icon className="chatIcon" name="abb/chat" sizeClass="medium"/> 
-          New Chat
+          <Translator language={language} keyName="translateData.leftPanel.newChat" />
         </button>
 
         <span className="downloadCenterText"> 
           <ABB.Icon className="downloadIcon" name="abb/download" sizeClass="medium"/> 
-          Downlaod Center 
+          <Translator language={language} keyName="translateData.leftPanel.downloadCenter" /> 
         </span>
         
         <div className="downloadSummaryMenu">
-          <button> Commercial Summary </button>
-          <button> Technical Summary </button>
-          <button> Contract Summary </button>
-          <button> Procurement Summary </button>
-          <button> Other Summary </button>
+          <button> <Translator language={language} keyName="translateData.leftPanel.downloadSummary.commercialSummary" /> </button>
+          <button> <Translator language={language} keyName="translateData.leftPanel.downloadSummary.technicalSummary" /> </button>
+          <button> <Translator language={language} keyName="translateData.leftPanel.downloadSummary.contractSummary" /> </button>
+          <button> <Translator language={language} keyName="translateData.leftPanel.downloadSummary.procurementSummary" /> </button>
+          <button> <Translator language={language} keyName="translateData.leftPanel.downloadSummary.otherSummary" /> </button>
         </div>
       </div>
 
-      <Card onRefreshBrowseAndChat={isBrowseAndChatOpen}/>
+      <Card onRefreshBrowseAndChat={isBrowseAndChatOpen} language={language}/>
 
     </div>
   );

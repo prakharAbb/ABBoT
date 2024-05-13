@@ -20,7 +20,7 @@ function App() {
       {/* <BrowseFile /> */}
       {/* <WelcomeBox /> */}
       {/* <TextBox /> */}
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   );
 }

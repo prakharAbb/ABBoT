@@ -1,0 +1,135 @@
+{
+  "translateData": {
+    "header": {
+      "product": "PAEN ABBoT"
+    },
+
+    "leftPanel": {
+      "newChat": "Nuevo Chat",
+      "downloadCenter": "Centro de Descargas",
+      "downloadSummary": {
+        "commercialSummary": "Resumen Comercial",
+        "technicalSummary": "Resumen Técnico",
+        "contractSummary": "Resumen del Contrato",
+        "procurementSummary": "Resumen de Adquisiciones",
+        "otherSummary": "Otros Resúmenes"
+      }
+    },
+
+    "cards": {
+      "title": {
+        "commercial": "Comercial",
+        "technical": "Técnico",
+        "contract": "Contrato",
+        "procurement": "Adquisiciones",
+        "others": "Otros"
+      },
+      "description": {
+        "commercial": "Especifica términos comerciales",
+        "technical": "Define el alcance del suministro y los aspectos de la solución",
+        "contract": "Describe los términos y condiciones",
+        "procurement": "Resumen de documentos, negociaciones con proveedores",
+        "others": "Inteligencia Documental (por ejemplo, Ingeniería, Otros)"
+      }
+    },
+
+    "welcome": {
+      "greeting": "Bienvenido a PAEN ABBoT",
+      "clickDept": "Por favor, haz clic en cualquier departamento para continuar."
+    },
+
+    "howCanIHelp": "¿Cómo puedo ayudarte hoy?",
+
+    "browse": {
+      "browseFiles": "Buscar archivos (Máx. 10MB)",
+      "browseRequest": "Por favor, busca tu(s) documento(s)",
+      "browseRequestformat": "(Solo formatos .pdf, .docx)",
+      "fileSelected": "archivo(s) seleccionado(s)",
+      "clickOnUpload": "Por favor, haz clic en subir",
+      "selectedFiles": "Archivos seleccionados:",
+      "fileUploaded": "archivo(s) subido(s)",
+      "upload": "Subir",
+      "suggestionRequest": "Haz clic en las preguntas sugeridas (opcional) a continuación para preguntar a ABBoT sobre ",
+      "navigateSuggestions": {
+        "slide": "Diapositiva",
+        "nextSuggestions": "Sugerencias Siguientes",
+        "prevSuggestions": "Sugerencias Anteriores"
+      }
+    },
+
+    "textBox": {
+      "messageABBoT": "Mensaje a ABBoT..."
+    },
+
+    "footer": {
+      "raiseConcern": "Plantear Preocupaciones",
+      "contactUs": "Contáctanos",
+      "feedback": "Comentarios",
+      "termsAndConditions": "Términos y Condiciones",
+      "copyRight": "© 2024 ABB"
+    },
+
+    "suggestedQuestions": {
+      "commercial": [
+        "¿Cuáles son los derechos y cláusulas de suspensión y terminación?",
+        "¿Cuáles son los Daños y Perjuicios Liquidados (LDs) por Rendimiento y Retrasos?",
+        "Da un Resumen de responsabilidades y pérdidas consecuentes",
+        "¿Cuáles son los términos y condiciones de pago y los formatos de precio?",
+        "¿Cuáles son los montos de penalización o la responsabilidad por Daños y Perjuicios Liquidados Tardíos?",
+        "Enumera los términos y cláusulas de garantía",
+        "¿Cuáles son las leyes, reclamaciones y mecanismos de disputa aplicables?",
+        "¿Quién tiene la autoridad de resolución de disputas en este contrato?"
+      ],
+      "technical": [
+        "¿Qué sistemas entre DCS, SIS, FGS, ICSS, etc. están en el documento?",
+        "¿Cuál es el alcance de trabajo para todos los sistemas identificados?",
+        "Resumen breve de la arquitectura del sistema junto con estándares, sistemas de soporte, etc.",
+        "¿Cuáles son las redundancias en la arquitectura y/o diseño?",
+        "Enumera los requisitos de diseño de hardware y/o software",
+        "Enumera la lista de materiales (BOM) para todos los sistemas identificados",
+        "Da las especificaciones técnicas y estándares para la fabricación de armarios DCS",
+        "Da las especificaciones técnicas y estándares para la fabricación de armarios SIS",
+        "Da las especificaciones técnicas y estándares para la fabricación de armarios FGS",
+        "Da las especificaciones técnicas y estándares para la fabricación de armarios ICSS",
+        "Da la configuración/especificaciones, información y cantidades de los módulos de entrada (analógicos y digitales)",
+        "Da la configuración/especificaciones, información y cantidades de los módulos de salida (analógicos y digitales)"
+      ],
+      "contract": [
+        "Da las fechas de inicio, fin y extensión del proyecto",
+        "Da un resumen de responsabilidades y pérdidas consecuentes",
+        "¿Cuáles son los términos y condiciones de pago y los formatos de precio?",
+        "Enumera la retención de dinero, el pago anticipado y las condiciones de seguro",
+        "¿Cuáles son los derechos y cláusulas de suspensión y terminación?",
+        "¿Cuáles son los Daños y Perjuicios Liquidados (LDs) por Rendimiento y Retrasos?",
+        "¿Cuáles son los montos de penalización o la responsabilidad por Daños y Perjuicios Liquidados Tardíos?",
+        "Enumera los términos y cláusulas de garantía",
+        "¿Cuáles son las leyes, reclamaciones y mecanismos de disputa aplicables?",
+        "Enumera las disposiciones de aviso, la seguridad del rendimiento y los requisitos locales del país"
+      ],
+      "procurement": [
+        "¿Cuál es el resumen de responsabilidades y pérdidas consecuentes?",
+        "¿Cuáles son los términos/condiciones de pago y los formatos de precio?",
+        "Da un resumen del documento",
+        "Enumera los productos de ABB en el documento",
+        "Resumen breve de los procedimientos de instalación (si los hay) en el documento",
+        "Si el catálogo de productos muestra las especificaciones/configuración detallada del producto",
+        "Si el catálogo de productos enumera las aplicaciones y beneficios del producto",
+        "Enumera los estándares/cláusulas mencionados en el documento",
+        "Resumen de términos de pago, condiciones del acuerdo, limitaciones/responsabilidades, etc.",
+        "¿Cuáles son las leyes, reclamaciones y mecanismos de disputa aplicables?"
+      ],
+      "others": [
+        "¿Cuál es el resumen de responsabilidades y pérdidas consecuentes?",
+        "¿Cuáles son los términos/condiciones de pago y los formatos de precio?",
+        "Da un resumen del documento",
+        "Enumera los productos de ABB en el documento",
+        "Resumen breve de los procedimientos de instalación (si los hay) en el documento",
+        "Si el catálogo de productos muestra las especificaciones/configuración detallada del producto",
+        "Si el catálogo de productos enumera las aplicaciones y beneficios del producto",
+        "Enumera los estándares/cláusulas mencionados en el documento",
+        "Resumen de términos de pago, condiciones del acuerdo, limitaciones/responsabilidades, etc.",
+        "¿Cuáles son las leyes, reclamaciones y mecanismos de disputa aplicables?"
+      ]
+    }
+  }
+}

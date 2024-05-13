@@ -1,0 +1,135 @@
+{
+  "translateData": {  
+    "header": {
+      "product": "PAEN ABBoT"
+    },
+
+    "leftPanel": {
+      "newChat": "Nouveau Chat",
+      "downloadCenter": "Centre de Téléchargement",
+      "downloadSummary": {
+        "commercialSummary": "Résumé Commercial",
+        "technicalSummary": "Résumé Technique",
+        "contractSummary": "Résumé du Contrat",
+        "procurementSummary": "Résumé des Achats",
+        "otherSummary": "Autre Résumé"
+      }
+    },
+
+    "cards": {
+      "title": {
+        "commercial": "Commercial",
+        "technical": "Technique",
+        "contract": "Contrat",
+        "procurement": "Achats",
+        "others": "Autres"
+      },
+      "description": {
+        "commercial": "Spécifie les termes commerciaux",
+        "technical": "Définit la portée de la fourniture et les aspects de la solution",
+        "contract": "Présente les termes et conditions",
+        "procurement": "Résumé du document, négociations avec le fournisseur",
+        "others": "Intelligence documentaire (par ex. Ingénierie, Autres)"
+      }
+    },
+    
+    "welcome": {
+      "greeting": "Bienvenue sur PAEN ABBoT",
+      "clickDept": "Veuillez cliquer sur un département pour continuer."
+    },
+
+    "howCanIHelp": "Comment puis-je vous aider aujourd'hui ?",    
+
+    "browse": {
+      "browseFiles": "Parcourir les fichiers (Max 10Mo)",
+      "browseRequest": "Veuillez parcourir votre (vos) document(s)",
+      "browseRequestFormat": "(Formats .pdf, .docx uniquement)",
+      "fileSelected": "fichier(s) sélectionné(s)",
+      "clickOnUpload": "Veuillez cliquer sur télécharger",
+      "selectedFiles": "Fichiers sélectionnés :",
+      "fileUploaded": "fichier(s) téléchargé(s)",
+      "upload": "Télécharger",
+      "suggestionRequest": "Cliquez sur les questions suggérées (facultatif) ci-dessous pour demander à ABBoT ",
+      "navigateSuggestions": {
+        "slide": "Diapositive",
+        "nextSuggestions": "Prochaines Suggestions",
+        "prevSuggestions": "Suggestions Précédentes"
+      }
+    },
+
+    "textBox": {
+      "messageABBoT": "Message ABBoT..."
+    },
+
+    "footer": {
+      "raiseConcern": "Élever des Préoccupations",
+      "contactUs": "Contactez-nous",
+      "feedback": "Retour",
+      "termsAndConditions": "Termes et Conditions",
+      "copyRight": "© 2024 ABB"
+    },
+
+    "suggestedQuestions": {
+      "commercial": [
+        "Quels sont les droits et clauses de suspension et de résiliation ?",
+        "Quels sont les dommages-intérêts liquidés (LDs) pour les performances et les retards ?",
+        "Donnez le résumé des responsabilités et des pertes consécutives",
+        "Quels sont les modalités de paiement et les formats de prix ?",
+        "Quels sont les montants de pénalité ou la responsabilité pour les dommages-intérêts liquidés retardés ?",
+        "Listez les termes et clauses de garantie",
+        "Quelles sont les lois, réclamations et mécanismes de règlement des différends applicables ?",
+        "Qui a l'autorité de résolution des litiges dans ce contrat ?"
+      ],
+      "technical": [
+        "Quels systèmes parmi DCS, SIS, FGS, ICSS, etc. sont mentionnés dans le document ?",
+        "Quelle est la portée des travaux pour tous les systèmes identifiés ?",
+        "Résumez brièvement l'architecture système ainsi que les normes, les systèmes de support, etc.",
+        "Quelles sont les redondances dans l'architecture et/ou la conception ?",
+        "Listez les exigences de conception matérielles et/ou logicielles",
+        "Listez la nomenclature des matériaux (BOM) pour tous les systèmes identifiés",
+        "Donnez les spécifications techniques et les normes pour la fabrication des armoires DCS",
+        "Donnez les spécifications techniques et les normes pour la fabrication des armoires SIS",
+        "Donnez les spécifications techniques et les normes pour la fabrication des armoires FGS",
+        "Donnez les spécifications techniques et les normes pour la fabrication des armoires ICSS",
+        "Donnez la configuration/les spécifications, les informations et les quantités pour les modules d'entrée (analogiques et numériques)",
+        "Donnez la configuration/les spécifications, les informations et les quantités pour les modules de sortie (analogiques et numériques)"
+      ],
+      "contract": [
+        "Donnez les dates de début, de fin et de prolongation du projet",
+        "Donnez le résumé des responsabilités et des pertes consécutives",
+        "Quels sont les modalités de paiement et les formats de prix ?",
+        "Listez les conditions de rétention d'argent, de paiement anticipé et d'assurance",
+        "Quels sont les droits et clauses de suspension et de résiliation ?",
+        "Quels sont les dommages-intérêts liquidés (LDs) pour les performances et les retards ?",
+        "Quels sont les montants de pénalité ou la responsabilité pour les dommages-intérêts liquidés retardés ?",
+        "Listez les termes et clauses de garantie",
+        "Quelles sont les lois, réclamations et mécanismes de règlement des différends applicables ?",
+        "Listez les dispositions relatives à l'avis, à la sécurité de performance et aux exigences locales du pays"
+      ],
+      "procurement": [
+        "Donnez le résumé des responsabilités et des pertes consécutives ?",
+        "Quelles sont les modalités/conditions de paiement et les formats de prix ?",
+        "Donnez le résumé du document",
+        "Listez les produits ABB mentionnés dans le document",
+        "Résumez brièvement les procédures d'installation (le cas échéant) dans le document",
+        "Si le catalogue de produits montre les spécifications/définitions détaillées du produit",
+        "Si le catalogue de produits liste les applications et les avantages du produit",
+        "Listez les normes/clauses mentionnées dans le document",
+        "Résumez les modalités de paiement, les conditions de l'accord, les limitations/responsabilités, etc.",
+        "Quelles sont les lois, réclamations et mécanismes de règlement des différends applicables ?"
+      ],
+      "others": [
+        "Donnez le résumé des responsabilités et des pertes consécutives ?",
+        "Quelles sont les modalités/conditions de paiement et les formats de prix ?",
+        "Donnez le résumé du document",
+        "Listez les produits ABB mentionnés dans le document",
+        "Résumez brièvement les procédures d'installation (le cas échéant) dans le document",
+        "Si le catalogue de produits montre les spécifications/définitions détaillées du produit",
+        "Si le catalogue de produits liste les applications et les avantages du produit",
+        "Listez les normes/clauses mentionnées dans le document",
+        "Résumez les modalités de paiement, les conditions de l'accord, les limitations/responsabilités, etc.",
+        "Quelles sont les lois, réclamations et mécanismes de règlement des différends applicables ?"
+      ]
+    }
+  }
+}

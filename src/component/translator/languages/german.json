@@ -1,0 +1,135 @@
+{
+  "translateData": {
+    "header": {
+      "product": "PAEN ABBoT"
+    },
+
+    "leftPanel": {
+      "newChat": "Neuer Chat",
+      "downloadCenter": "Download-Center",
+      "downloadSummary": {
+        "commercialSummary": "Geschäftszusammenfassung",
+        "technicalSummary": "Technische Zusammenfassung",
+        "contractSummary": "Vertragszusammenfassung",
+        "procurementSummary": "Beschaffungszusammenfassung",
+        "otherSummary": "Andere Zusammenfassung"
+      }
+    },
+
+    "cards": {
+      "title": {
+        "commercial": "Geschäftlich",
+        "technical": "Technisch",
+        "contract": "Vertrag",
+        "procurement": "Beschaffung",
+        "others": "Andere"
+      },
+      "description": {
+        "commercial": "Spezifiziert kommerzielle Bedingungen",
+        "technical": "Definiert den Lieferumfang und Lösungsaspekte",
+        "contract": "Umreißt die Allgemeinen Geschäftsbedingungen",
+        "procurement": "Dokumentzusammenfassung, Lieferantenverhandlungen",
+        "others": "Dokumentintelligenz (z. B. Ingenieurwesen, Andere)"
+      }
+    },
+
+    "welcome": {
+      "greeting": "Willkommen bei PAEN ABBoT",
+      "clickDept": "Bitte klicken Sie auf eine Abteilung, um fortzufahren."
+    },
+
+    "howCanIHelp": "Wie kann ich Ihnen heute helfen?",
+
+    "browse": {
+      "browseFiles": "Dateien durchsuchen (Max 10 MB)",
+      "browseRequest": "Bitte durchsuchen Sie Ihre Dokumente",
+      "browseRequestFormat": "(Nur .pdf, .docx Formate)",
+      "fileSelected": "Datei(en) ausgewählt",
+      "clickOnUpload": "Bitte klicken Sie auf Hochladen",
+      "selectedFiles": "Ausgewählte Dateien:",
+      "fileUploaded": "Datei(en) hochgeladen",
+      "upload": "Hochladen",
+      "suggestionRequest": "Klicken Sie auf die unten vorgeschlagenen Fragen (optional), um ABBoT nach ",
+      "navigateSuggestions": {
+        "slide": "Folie",
+        "nextSuggestions": "Nächste Vorschläge",
+        "prevSuggestions": "Vorherige Vorschläge"
+      }
+    },
+
+    "textBox": {
+      "messageABBoT": "Nachricht an ABBoT..."
+    },
+
+    "footer": {
+      "raiseConcern": "Bedenken äußern",
+      "contactUs": "Kontaktieren Sie uns",
+      "feedback": "Feedback",
+      "termsAndConditions": "Geschäftsbedingungen",
+      "copyRight": "© 2024 ABB"
+    },
+
+    "suggestedQuestions": {
+      "commercial": [
+        "Was sind die Aufhänge- und Kündigungsrechte und -klauseln?",
+        "Was sind die Pauschalierter Schadenersatz (LDs) für Leistung und Verzögerungen?",
+        "Geben Sie die Zusammenfassung von Haftungen und Folgeschäden an",
+        "Was sind die Zahlungsbedingungen und Preisformate?",
+        "Was sind die Strafzahlungen oder Haftung für verzögerte Pauschalierter Schadenersatz?",
+        "Listen Sie die Garantien/Gewährleistungsbedingungen und -klauseln auf",
+        "Was sind die geltenden Gesetze, Ansprüche und Streitbeilegungsmechanismen?",
+        "Wer hat die Streitbeilegungsbefugnis in diesem Vertrag?"
+      ],
+      "technical": [
+        "Welche Systeme wie DCS, SIS, FGS, ICSS usw. sind im Dokument enthalten?",
+        "Was ist der Arbeitsumfang für alle identifizierten Systeme?",
+        "Fassen Sie die Systemarchitektur zusammen, einschließlich Standards, Unterstützungssysteme usw.",
+        "Was sind die Redundanzen in der Architektur und/oder im Design?",
+        "Listen Sie die Hardware- und/oder Software-Designanforderungen auf",
+        "Listen Sie das Materialstückverzeichnis (BOM) für alle identifizierten Systeme auf",
+        "Geben Sie die technischen Spezifikationen und Standards für die Herstellung von DCS-Schränken an",
+        "Geben Sie die technischen Spezifikationen und Standards für die Herstellung von SIS-Schränken an",
+        "Geben Sie die technischen Spezifikationen und Standards für die Herstellung von FGS-Schränken an",
+        "Geben Sie die technischen Spezifikationen und Standards für die Herstellung von ICSS-Schränken an",
+        "Geben Sie Konfiguration/Spezifikationen, Informationen und Mengen für Eingangsmodule (analog & digital) an",
+        "Geben Sie Konfiguration/Spezifikationen, Informationen und Mengen für Ausgangsmodule (analog & digital) an"
+      ],
+      "contract": [
+        "Geben Sie die Termine für Beginn, Ende und Verlängerung des Projekts an",
+        "Geben Sie die Zusammenfassung von Haftungen und Folgeschäden an",
+        "Was sind die Zahlungsbedingungen und Preisformate?",
+        "Listen Sie die Geldretention, Vorauszahlung und Versicherungsbedingungen auf?",
+        "Was sind die Aufhänge- und Kündigungsrechte und -klauseln?",
+        "Was sind die Pauschalierter Schadenersatz (LDs) für Leistung und Verzögerungen?",
+        "Was sind die Strafzahlungen oder Haftung für verzögerte Pauschalierter Schadenersatz?",
+        "Listen Sie die Garantien/Gewährleistungsbedingungen und -klauseln auf",
+        "Was sind die geltenden Gesetze, Ansprüche und Streitbeilegungsmechanismen?",
+        "Listen Sie Benachrichtigungsklauseln, Leistungssicherheit und lokale Anforderungen des Landes auf"
+      ],
+      "procurement": [
+        "Geben Sie die Zusammenfassung von Haftungen und Folgeschäden an",
+        "Was sind die Zahlungsbedingungen und Preisformate?",
+        "Geben Sie eine Zusammenfassung des Dokuments",
+        "Listen Sie die ABB-Produkte im Dokument auf",
+        "Fassen Sie die Installationsverfahren (falls vorhanden) im Dokument kurz zusammen",
+        "Wenn Produktkatalog, zeigen Sie die detaillierten Spezifikationen/Konfiguration des Produkts",
+        "Wenn Produktkatalog, listen Sie die Anwendungen und Vorteile des Produkts auf",
+        "Listen Sie die im Dokument genannten Standards/Klauseln auf",
+        "Fassen Sie Zahlungsbedingungen, Vereinbarungsbedingungen, Beschränkungen/Haftungen usw. zusammen",
+        "Was sind die geltenden Gesetze, Ansprüche und Streitbeilegungsmechanismen?"
+      ],
+      "others": [
+        "Geben Sie die Zusammenfassung von Haftungen und Folgeschäden an",
+        "Was sind die Zahlungsbedingungen und Preisformate?",
+        "Geben Sie eine Zusammenfassung des Dokuments",
+        "Listen Sie die ABB-Produkte im Dokument auf",
+        "Fassen Sie die Installationsverfahren (falls vorhanden) im Dokument kurz zusammen",
+        "Wenn Produktkatalog, zeigen Sie die detaillierten Spezifikationen/Konfiguration des Produkts",
+        "Wenn Produktkatalog, listen Sie die Anwendungen und Vorteile des Produkts auf",
+        "Listen Sie die im Dokument genannten Standards/Klauseln auf",
+        "Fassen Sie Zahlungsbedingungen, Vereinbarungsbedingungen, Beschränkungen/Haftungen usw. zusammen",
+        "Was sind die geltenden Gesetze, Ansprüche und Streitbeilegungsmechanismen?"
+      ]
+    }
+  }
+}

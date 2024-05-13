@@ -33,7 +33,7 @@
             top: 14px;
             left: 8%;
             width: 30%;
-            height: 85px;
+            height: 12vh;
             font-size: 16px;
             font-weight: bold;
             display: flex;
@@ -99,10 +99,10 @@
     .selectedFileName {
         margin-top: 10%;
         margin-left: 8%;
+        margin-bottom: 1%;
         display: flex;
         flex-direction: column;
         text-align: left;
-        padding-bottom: 10px;
     }
 
         .selectedFileName h3 {
@@ -114,34 +114,113 @@
         }
     
     .suggestedQuestionsBox {
+        /* position: absolute; */
         margin-top: 1%;
         margin-right: 0.2%;
         border-radius: 8px; 
-        border: 1px solid red; /* Example border */
+        border: 1px solid #ccc; 
         background-color: #0000000A; /* Example background color */
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);     
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
     }
 
         .suggestedQuestionsBox h3 {
-            margin-top: 0.7%;
-            margin-left: 8%;
+            margin-top: 1.5%;
+            margin-left: 8.2%;
             margin-bottom: 1%;
         }
-
-        .questionsButton {
-            width: calc(45% - 20px); /* Two boxes in one row with some margin */
-            margin: 1% 0 1% 4%; /* Adjust margin as needed */
-            height: 40px;
-            padding: 0 0 0 20px;
-            border: 1px solid #ccc; /* Add border for better visualization */
-            border-radius: 15px;
-            box-sizing: border-box;
-            word-wrap: break-word; /* Enable text wrapping */
-            cursor: pointer;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            text-align: left;
-            vertical-align: center;
+        
+        .questionsBox {
+            margin-top: 2%;
+            margin-left: 8%;
+            margin-right: 8%;
+            margin-bottom: 3%;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px 11px; /* Vertical and horizontal gap between boxes */
         }
+            .questionsButton {
+                width: 49.3%;
+                margin-top: 0;
+                min-height: 9vh;
+                height: auto;
+                padding-left: 20px;
+                padding-right: 20px;
+                border-radius: 15px;
+                text-align: left;
+                cursor: pointer;
+                background-color: white;
+                border: 1px solid #ccc; /* Add border for better visualization */
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+
+            .questionsButton:hover {
+                color: white;
+                background-color: red; /* Example background color */
+            }
+
+        .navigateSuggestions{
+            margin-bottom: 1%;
+            display: flex;
+            align-items: center; /* Center vertically */
+            justify-content: space-between; /* Distribute items evenly */
+        }
+        
+            .previousSuggestions {
+                height: 5vh;
+                margin-left: 8%;
+                padding-left: 1%;
+                padding-right: 1%;
+                border-radius: 20px;
+                cursor: pointer;
+                color: white;
+                border: none;
+                box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3);
+                background-color: red; /* Example background color */
+            }
+
+                .previousSuggestions:hover {
+                    background-color: #FF99A0; /* Example background color */
+                }
+
+                /* Styles for the disabled previous suggestion button */
+                .previousSuggestions:disabled {
+                    border: none;
+                    box-shadow: none;
+                    background-color: #ccc; /* Color for disabled state */
+                    color: #666; /* Text color for disabled state */
+                    cursor: not-allowed; /* Change cursor to not-allowed for disabled state */
+                }
+
+            .slideNumber {
+                margin-right: 4%;
+                font-weight: bold;
+            }
+
+            .nextSuggestions {
+                height: 5vh;
+                margin-right: 8%;
+                padding-left: 1%;
+                padding-right: 1%;
+                border-radius: 20px;
+                cursor: pointer;
+                color: white;
+                border: none;
+                box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3);
+                background-color: red; /* Example background color */
+            }
+
+                .nextSuggestions:hover {
+                    background-color: #FF99A0; /* Example background color */
+                }
+
+                .nextSuggestions:disabled {
+                    border: none;
+                    box-shadow: none;
+                    background-color: #ccc; /* Color for disabled state */
+                    color: #666; /* Text color for disabled state */
+                    cursor: not-allowed; /* Change cursor to not-allowed for disabled state */
+                }
         
 
 

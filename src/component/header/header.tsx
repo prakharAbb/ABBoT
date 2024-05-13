@@ -6,10 +6,17 @@ import '@abb/abb-common-ux-react/styles.css';
 import logoImage from '../../assets/abb.png';
 import LanguageSelector from './languageSelector';
 import LeftPanel from '../leftPanel/leftPanel';
+import Footer from 'component/footer/footer';
+import { Translator } from 'component/translator/translator';
 
 const Header: React.FC = () => {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [language, setLanguage] = useState("english"); // Default language is English
+
+  const handleLanguageChange = (selectedLanguage: string) => {
+    setLanguage(selectedLanguage);
+  };
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -18,7 +25,7 @@ const Header: React.FC = () => {
 
   return (
     <div>
-      <LeftPanel isMenuOpen={isMenuOpen} />
+      <LeftPanel isMenuOpen={isMenuOpen} language={language}/>
       <header className={`header ${isMenuOpen ? 'menu-open' : ''}`}>
         <button className="menu-toggle" onClick={toggleMenu}>
           <div className="menu-icon"/>
@@ -26,30 +33,12 @@ const Header: React.FC = () => {
           <div className="menu-icon"/>          
         </button>
         <img src={logoImage} alt='Logo' className='logo-image'/>
-        <h3 className='header-content'> PAEN ABBoT </h3>
-        <LanguageSelector/>
+        <h3 className='header-content'> <Translator language={language} keyName="translateData.header.product" /> </h3>
+        <LanguageSelector onLanguageChange={handleLanguageChange} />
       </header>
+      <Footer language={language}/>
     </div>
   );
 }
 
 export default Header;
-
-// const Header: React.FC = () => {
-//   return (
-//     <div className="header-container">
-//         <ABB.AppHeader>
-//             <ABB.Link href='/'>
-//                 <img src={logoImage} alt='Logo' className='logo-image'/>
-//             </ABB.Link>
-//             <div className="logo-info">
-//                 <span>|</span>
-//                 <span>PAEN ABBoT</span>
-//             </div>
-//             <LanguageSelector/>
-//         </ABB.AppHeader>
-//     </div>
-//   );
-// };
-
-// export default Header;
