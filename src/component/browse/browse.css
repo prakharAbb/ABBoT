@@ -74,27 +74,30 @@
             text-align: center;
         }
 
+        .hidden {
+            display: none;
+        }
+
         .uploadButton {
             position: absolute;
             top: 39px;
             right: 10%;
-            background-color: #0000003D; /* Example button background color */
-            color: #fff; /* Example button text color */
             border: none;
             border-radius: 20px;
             font-size: 16px;
             font-weight: bold;
             padding: 8px 30px;
+            color: #fff; /* Example button text color */
+            background-color: red; /* Example button background color */
             cursor: pointer;
         }
 
-        .uploadButton.enabled{
-            background-color: red; /* Example background color */
-        }
+            .uploadButton:disabled {
+                background-color: #0000003D; /* Example background color */
+                color: #666; /* Example text color */
+                cursor: not-allowed; /* Change cursor to not-allowed */
+            }
 
-        .hidden {
-            display: none;
-        }
 
     .selectedFileName {
         margin-top: 10%;

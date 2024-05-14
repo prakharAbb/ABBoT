@@ -3,14 +3,13 @@ import React, { useState } from 'react';
 import './textBox.css';
 import * as ABB from '@abb/abb-common-ux-react'
 import sendIcon from '../../assets/send.png'
-import { Translator } from 'component/translator/translator';
 
 interface Props {
   onMessageSubmit: (message: string) => void;
-  language: string;
+  translate: (key: string) => string;
 }
 
-const TextBox: React.FC<Props> = ({onMessageSubmit, language}) => {
+const TextBox: React.FC<Props> = ({onMessageSubmit, translate}) => {
 
   const [isTextPresent, setIsTextPresent] = useState("");
   const [isMicActive, setIsMicActive] = useState(false);
@@ -47,7 +46,7 @@ const TextBox: React.FC<Props> = ({onMessageSubmit, language}) => {
     <div>
       <div className="textBox">
         <textarea 
-          placeholder="Message ABBoT..."
+          placeholder={translate("translateData.textBox.messageABBoT")}
           value={isTextPresent}
           onChange={handleTextChange}
           onKeyDown={handleEnterKeyPress} // Call handleEnterKeyPress on key down event

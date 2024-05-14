@@ -4,12 +4,10 @@ import './card.css'; // Create corresponding CSS file for styling
 import * as ABB from "@abb/abb-common-ux-react"
 import BrowseFile from 'component/browse/browse';
 import WelcomeBox from 'component/welcome/welcome';
-import { Translator } from 'component/translator/translator';
-import { title } from 'process';
 
 interface CardsProps {
     onRefreshBrowseAndChat: boolean;
-    language: string;
+    translate: (key: string) => string;
 }
 
 interface CardInfo {
@@ -25,7 +23,7 @@ const cardData: CardInfo[] = [
     { department: "others", iconName:"abb/settings" }
 ];
 
-const Cards: React.FC<CardsProps> = ({onRefreshBrowseAndChat, language}) => {
+const Cards: React.FC<CardsProps> = ({onRefreshBrowseAndChat, translate}) => {
     const [isBrowseOpen, setIsBrowseOpen] = useState<boolean>(false);
     const [isCardClicked , setIsCardClicked] = useState<number | null>(null);
     const [selectedDepartment, setSelectedDepartment] = useState<string | null>(null);
@@ -45,7 +43,7 @@ const Cards: React.FC<CardsProps> = ({onRefreshBrowseAndChat, language}) => {
         <div>                        
             {isBrowseOpen && (
                 <h1 className="title">
-                    <Translator language={language} keyName="translateData.howCanIHelp" />
+                    {translate("translateData.howCanIHelp")}
                 </h1>
             )}
 
@@ -61,15 +59,15 @@ const Cards: React.FC<CardsProps> = ({onRefreshBrowseAndChat, language}) => {
                             name={card.iconName}
                             sizeClass="medium"
                         />
-                        <h1> <Translator language={language} keyName={`translateData.cards.title.${card.department}`} /> </h1>
-                        <span> <Translator language={language} keyName={`translateData.cards.description.${card.department}`} /> </span>
+                        <h1> {translate(`translateData.cards.title.${card.department}`)} </h1>
+                        <span> {translate(`translateData.cards.description.${card.department}`)} </span>
                     </div>
                 ))}
             </div>
 
-            {!isBrowseOpen && <WelcomeBox language={language} />}
+            {!isBrowseOpen && <WelcomeBox translate={translate} />}
             
-            {isBrowseOpen && <BrowseFile selectedDepartment={selectedDepartment} language={language} />} 
+            {isBrowseOpen && <BrowseFile selectedDepartment={selectedDepartment} translate={translate} />} 
 
         </div>
     );

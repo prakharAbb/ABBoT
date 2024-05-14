@@ -1,13 +1,12 @@
 //header.tsx
 import React, { useState } from 'react';
-import * as ABB from '@abb/abb-common-ux-react';
 import '../header/header.css'; // Make sure to create a corresponding CSS file for styling
 import '@abb/abb-common-ux-react/styles.css';
 import logoImage from '../../assets/abb.png';
-import LanguageSelector from './languageSelector';
+import SelectLanguage from './selectLanguage';
 import LeftPanel from '../leftPanel/leftPanel';
 import Footer from 'component/footer/footer';
-import { Translator } from 'component/translator/translator';
+import Translator from 'component/translator/translate';
 
 const Header: React.FC = () => {
 
@@ -18,6 +17,8 @@ const Header: React.FC = () => {
     setLanguage(selectedLanguage);
   };
 
+  const translate = Translator({ language: language });
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -25,7 +26,7 @@ const Header: React.FC = () => {
 
   return (
     <div>
-      <LeftPanel isMenuOpen={isMenuOpen} language={language}/>
+      <LeftPanel isMenuOpen={isMenuOpen} translate={translate}/>
       <header className={`header ${isMenuOpen ? 'menu-open' : ''}`}>
         <button className="menu-toggle" onClick={toggleMenu}>
           <div className="menu-icon"/>
@@ -33,10 +34,10 @@ const Header: React.FC = () => {
           <div className="menu-icon"/>          
         </button>
         <img src={logoImage} alt='Logo' className='logo-image'/>
-        <h3 className='header-content'> <Translator language={language} keyName="translateData.header.product" /> </h3>
-        <LanguageSelector onLanguageChange={handleLanguageChange} />
+        <h3 className='header-content'> {translate("translateData.header.product")} </h3>
+        <SelectLanguage onLanguageChange={handleLanguageChange} />
       </header>
-      <Footer language={language}/>
+      <Footer translate={translate}/>
     </div>
   );
 }

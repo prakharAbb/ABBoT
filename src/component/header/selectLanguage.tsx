@@ -1,10 +1,10 @@
 // LanguageSelector.tsx
 import React, { useEffect, useRef, useState } from 'react';
-import '../header/languageSelector.css'; // Make sure to create a corresponding CSS file for styling
+import '../header/selectLanguage.css'; // Make sure to create a corresponding CSS file for styling
 import * as ABB from '@abb/abb-common-ux-react';
 import '@abb/abb-common-ux-react/styles.css';
 
-interface LanguageSelectorProps {
+interface selectLanguageProps {
   onLanguageChange: (language: string) => void;
 }
 
@@ -23,7 +23,7 @@ const languages: Language[] = [
   { code: 'JP', name: "japanese", label: '日本語'}
 ];
 
-const LanguageSelector: React.FC<LanguageSelectorProps> = ({ onLanguageChange }) => {
+const SelectLanguage: React.FC<selectLanguageProps> = ({ onLanguageChange }) => {
   const [currentLanguage, setCurrentLanguage] = useState<Language>(languages[0]);
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
   const languageSelectorRef = useRef<HTMLDivElement>(null);
@@ -74,5 +74,5 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({ onLanguageChange })
   );
 };
 
-export default LanguageSelector;
+export default SelectLanguage;
 
