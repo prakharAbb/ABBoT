@@ -2,14 +2,21 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Installation
+## Installation:
 
-1) npm typescript => npm install --save typescript @types/node @types/react @types/react-dom @types/jest
+If you encounter errors due to differences between nodes, use the --force flag after every syntax.
 
-2) npm cypress => npm install cypress --save-dev
+1) Install dependencies:
+=> npm install
 
-3) (Optional only for first time user)Edit environment for cypress
+If the installation fails due to TypeScript, install the following packages:
+=> npm install --save typescript @types/node @types/react @types/react-dom @types/jest
 
+2) (Optional but only for first time user) Edit environment for cypress. First, download the zip file of the binary version 
+and save location of zip file of binary version into the environment variable then install cypress below.
+
+3) Install Cypress for testing:
+=> npm install cypress --save-dev
 
 ## Available Scripts
 
