@@ -7,8 +7,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 If you encounter errors due to differences between nodes, use the `--force` flag after every syntax.
 
 1) Install dependencies:\
-=> npm install
-Note# If the installation fails due to TypeScript, install the following packages:\
+=> npm install \
+**Note#** If the installation fails due to TypeScript, install the following packages:\
 => npm install --save typescript @types/node @types/react @types/react-dom @types/jest
 
 2) (Optional but only for first time user) Edit environment for cypress. First, download the zip file of the binary version 
