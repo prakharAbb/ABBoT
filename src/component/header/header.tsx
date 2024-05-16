@@ -7,6 +7,7 @@ import SelectLanguage from './selectLanguage';
 import LeftPanel from '../leftPanel/leftPanel';
 import Footer from 'component/footer/footer';
 import Translator from 'component/translator/translate';
+import LoginButton from 'component/authentication/LoginButton';
 
 const Header: React.FC = () => {
 
@@ -37,6 +38,7 @@ const Header: React.FC = () => {
         <h3 className='header-content'> {translate("translateData.header.product")} </h3>
         <SelectLanguage onLanguageChange={handleLanguageChange} />
       </header>
+      <LoginButton /> 
       <Footer translate={translate}/>
     </div>
   );
